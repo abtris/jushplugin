@@ -16,10 +16,9 @@ if (!class_exists("JushPlugin")) {
 				}
 				
 				function addHeaderCode() {
-                  echo '<link type="text/css" rel="stylesheet" href="' . get_bloginfo('wpurl') . '/wp-content/plugins/jushplugin/css/jush.css" />' . "\n";
                   echo '<script type="text/javascript" src="' . get_bloginfo('wpurl') . '/wp-content/plugins/jushplugin/js/jush.js"></script>'. "\n";
 				  echo '<script type="text/javascript">'. "\n";
-				  echo "jush.style('jush.css');\n";
+				  echo "jush.style('' . get_bloginfo('wpurl') . "'/wp-content/plugins/jushplugin/css/jush.css'");\n";
 				  echo "jush.highlight_tag('pre');\n";
 				  echo '</script>';
                 }
