@@ -14,7 +14,7 @@ if (!class_exists("JushPlugin")) {
 				{
 				}
 				
-				function addHeaderCode() {
+				function addCode() {
                   echo '<script type="text/javascript" src="' . get_bloginfo('wpurl') . '/wp-content/plugins/jushplugin/js/jush.js"></script>'. "\n";
 				  echo '<script type="text/javascript">'. "\n";
 				  echo "jush.style('".get_bloginfo('wpurl')."/wp-content/plugins/jushplugin/css/jush.css');\n";
@@ -32,5 +32,5 @@ if (class_exists("JushPlugin")) {
 
 if (isset($jush_plugin)) {
         //Actions    
-        add_action('wp_head', array(&$jush_plugin, 'addHeaderCode'), 1);
+        add_action('wp_footer', array(&$jush_plugin, 'addCode'), 1);
 }
