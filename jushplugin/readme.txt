@@ -28,14 +28,16 @@ e.g.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 
-All <pre class="jush"> tags will be highlighted. Language is determined by the class name beginning with "jush-" (e.g. <pre class="jush-js">). Default language is htm. 
+All `<pre class="jush">` tags will be highlighted. Language is determined by the class name beginning with "jush-" (e.g. `<pre class="jush-js">`). Default language is htm. 
 
 == Frequently Asked Questions ==
 
-== Screenshots ==
-
+[For questions go to plugin homepage]:http://jush.sourceforge.net/
 
 == Changelog ==
+
+= 1.0.1 =
+* Readme update
 
 = 1.0 =
 * First version
