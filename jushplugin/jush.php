@@ -3,7 +3,7 @@
 Plugin Name: JUSH
 Plugin URI: http://jush.sourceforge.net/
 Description: JUSH Wordpress plugin
-Version: 1.0.0
+Version: 1.0.1
 Author: Ladislav Prskavec
 Author URI: http://ladislav.prskavec.net
 */
@@ -15,9 +15,9 @@ if (!class_exists("JushPlugin")) {
 				}
 				
 				function addCode() {
-                  echo '<script type="text/javascript" src="' . get_bloginfo('wpurl') . '/wp-content/plugins/jushplugin/js/jush.js"></script>'. "\n";
+                    echo '<script type="text/javascript" src="' . get_bloginfo('wpurl') . '/wp-content/plugins/jush-wordpress/js/jush.js"></script>'. "\n";
 				  echo '<script type="text/javascript">'. "\n";
-				  echo "jush.style('".get_bloginfo('wpurl')."/wp-content/plugins/jushplugin/css/jush.css');\n";
+                    echo "jush.style('".get_bloginfo('wpurl')."/wp-content/plugins/jush-wordpress/css/jush.css');\n";
 				  echo "jush.highlight_tag('pre');\n";
 				  echo '</script>';
                 }

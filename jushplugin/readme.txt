@@ -3,7 +3,7 @@ Contributors: Ladislav Prskavec, Jakub Vrana
 Tags: syntax highlighter
 Requires at least: 2.8
 Tested up to: 2.9.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 JavaScript Syntax Highlighter can be used for client-side syntax highlighting.
 
@@ -38,6 +38,7 @@ All `<pre class="jush">` tags will be highlighted. Language is determined by the
 
 = 1.0.1 =
 * Readme update
+* Fixed paths
 
 = 1.0 =
 * First version
